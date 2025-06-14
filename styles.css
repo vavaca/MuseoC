@@ -1,0 +1,281 @@
+.boton-contacto {
+  font-family: Georgia, serif;
+  font-size: 15px;
+  color: rgba(35, 35, 36, 0.712);
+  background-color:antiquewhite;
+  cursor: pointer;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-left: 90%;
+  margin-top: 40%;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.boton-contacto:hover{
+  background-color: rgba(187, 187, 247, 0.692);
+}
+
+/* logo */
+.logo-pequeño {
+  width: 200px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+/* titulo */
+.titulo {
+  color: rgb(19, 131, 230);
+  margin-bottom: 0;
+  margin-top: 1px;
+  font-family: "Ancizar Serif", serif;
+  font-style: serif;
+  font-size: 40px;  
+}
+/* subtitulo */
+.subtitulo {
+  color: rgb(82, 82, 83);
+  margin-top: 0px;
+  font-size: 18px;
+  font-family: "Ancizar Serif", serif;
+  font-style: italic;
+}
+
+body {
+  font-family: "Ancizar Serif", serif ;
+  margin: 0;
+  text-align: center;
+  background-color: aliceblue; 
+}
+
+/* menú horizontal */
+nav { 
+  margin-top: 20px;
+}
+
+.menu-horizontal {
+  list-style: none; 
+  display: inline-flex;
+  margin: 5;
+  padding: 20;
+  justify-content: center;
+  border-bottom: 1px solid transparent;
+}
+
+.menu-horizontal > li {
+  position: relative;
+}
+
+.menu-horizontal > li > a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  color: #222;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: Georgia, serif;
+}
+
+.menu-horizontal li + li::before {
+  content: "|"; 
+  color: #999;
+  position: absolute;
+  left: 0; 
+  top: 20%;
+}
+
+.card-body{
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.card-title{
+  justify-content: center;
+  font-family: "Ancizar Serif", serif;
+  font-style: italic;
+  font-size: 40px;
+  padding: 20px;
+  align-items: center;
+}
+.contenedor {
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+  line-height: 1.6;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+/*footer */
+
+footer a {
+  color: #035e8b;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+footer p {
+  color:rgb(82, 82, 83);
+  font-size: 12px;
+  margin: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pie {
+  background-color: rgba(255, 228, 196, 0.589);
+  font-size: 15px;
+  font-family:'Courier New', Courier, monospace;
+  padding: 0;
+}
+
+
+/* ------------- CONTACTO ---------------------------------------------------------------- */
+.titulo-paginas {
+  color: rgb(19, 131, 230);
+  margin-bottom: 0;
+  margin-top: 1px;
+  font-family: "Ancizar Serif", serif;
+  font-size: 40px;
+}
+
+
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.form-container h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 15px;
+  align-items: center;
+}
+
+.grid-form label {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.grid-form input,
+.grid-form select,
+.grid-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+.full-width {
+  grid-column: span 2;
+  padding: 10px;
+  text-align: center;
+}
+
+.checkbox {
+  display: center;
+  gap: 50px;
+  cursor: pointer;
+}
+
+.grid-form button {
+  padding: 12px;
+  background-color: #005f99;
+  color: whitesmoke;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 80px;
+  margin: 0 auto; 
+  display: block;
+}
+
+.grid-form button:hover {
+  background-color: rgb(2, 90, 2);
+}
+
+@media (max-width: 700px) {
+  .grid-form {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 2;
+  }
+}
+/* ------------- CEDOCHUR ---------------------------------------------------------------- */
+.carousel-fixed-box {
+  width: 80%;
+  height: 500px;
+  margin: 0 10%;
+  overflow: hidden;
+}
+
+.carousel-fixed-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-cedocur {
+margin: auto 10;
+padding: 10%;
+}
+
+/* ------------- CLUB ---------------------------------------------------------------- */
+.p {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.card-club{
+  width: 90% auto;
+  height: 90% auto;
+  margin: auto 5;
+  padding: 10%;
+}
+
+@media (max-width: 576px) {
+  .carousel-fixed-box {
+  width: 90%;
+  height: 200px;
+  }
+}
+
+/* ------------- MUSEO ---------------------------------------------------------------- */
+.card-text {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  margin-bottom: 2px;
+} 
