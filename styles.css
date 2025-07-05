@@ -1,21 +1,43 @@
+/* hacete amigo*/
 .boton-contacto {
   font-family: Georgia, serif;
   font-size: 15px;
-  color: rgba(35, 35, 36, 0.712);
+  color: rgba(35, 35, 36, 0.7);
   background-color:antiquewhite;
   cursor: pointer;
   border-radius: 20px;
   text-decoration: none;
+  text-align: center;
+  line-height: 20px;
   margin-left: 90%;
   margin-top: 40%;
   padding: 10px;
   position: fixed;
-  top: 0;
-  right: 0;
+  display: inline-block;
+  top: 10px;
+  right: 10px;
+  width: 150px;
+  height: 40px;
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .boton-contacto:hover{
-  background-color: rgba(187, 187, 247, 0.692);
+  background-color: rgb(19, 131, 230);
+  color: whitesmoke;
+  font-weight: bold;
+  animation: reboteizq 1.5s ease forwards;
+}
+
+@keyframes reboteizq {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
 }
 
 /* logo */
@@ -31,7 +53,7 @@
   margin-bottom: 0;
   margin-top: 1px;
   font-family: "Ancizar Serif", serif;
-  font-style: serif;
+  font-style: normal;
   font-size: 40px;  
 }
 /* subtitulo */
@@ -53,6 +75,12 @@ body {
 /* menú horizontal */
 nav { 
   margin-top: 20px;
+}
+
+nav ul.menu-horizontal a:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+    color: rgb(19, 131, 230);
 }
 
 .menu-horizontal {
@@ -95,14 +123,6 @@ nav {
   align-items: center;
 }
 
-.card-title{
-  justify-content: center;
-  font-family: "Ancizar Serif", serif;
-  font-style: italic;
-  font-size: 40px;
-  padding: 20px;
-  align-items: center;
-}
 .contenedor {
   justify-content: center;
   font-family: "Lato", sans-serif;
@@ -118,6 +138,19 @@ p {
   margin-right: 10%;
 }
 
+.card-portada {
+width: 90%;
+justify-self: center;
+}
+
+.btn {
+  font-family: Georgia, serif;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
 
 /*footer */
 
@@ -139,14 +172,6 @@ footer p {
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.pie {
-  background-color: rgba(255, 228, 196, 0.589);
-  font-size: 15px;
-  font-family:'Courier New', Courier, monospace;
-  padding: 0;
-}
-
 
 /* ------------- CONTACTO ---------------------------------------------------------------- */
 .titulo-paginas {
@@ -277,5 +302,17 @@ padding: 10%;
 .card-text {
   font-family: "Lato", sans-serif;
   font-size: 15px;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
+  padding:5px 5px 20px 5px;
+  margin-top: 0px;
 } 
+
+.card-title{
+  justify-content: center;
+  font-family: "Ancizar Serif", serif;
+  font-style: italic;
+  font-size: 30px;
+  padding: 5px 5px 0px 5px;
+  align-items: center;
+}
+
